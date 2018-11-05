@@ -1,0 +1,6 @@
+<!--pages/test/congUI/button/button.wxml-->
+<view class="button-contant" bindtouchstart="touchStart" bindtouchend="touchEnd" style=" box-shadow: 0rpx 0rpx 8rpx 1rpx {{backgroundColor}}; background:{{backgroundColor}}">
+    <view class="cover" style="background:{{show?color:backgroundColor}};">
+        <view style="color:{{show?backgroundColor:color}}">{{text}}</view>
+    </view>
+</view>

@@ -1,66 +1,36 @@
-// pages/test/congUI/background/background.js
-Page({
+Component({
+    behaviors: [],
 
-  /**
-   * 页面的初始数据
-   */
-  data: {
+    properties: {
+        // 背景颜色
+        backgroundColor: {
+            type: String,
+            value: ""
+        },
+        // 中间颜色
+        middleColor: {
+            type: String,
+            value: ""
+        },
+        // 头部高度
+        headerHeight: {
+            type: String,
+            value: "250rpx"
+        },
+        // 底部高度
+        footerHeight: {
+            type: String,
+            value: "0"
+        }
+    },
+    data: {}, // 私有数据，可用于模板渲染
+    attached: function () {
+        console.log(this.properties.backgroundColor)
+    },
+    ready: function () {
+        // console.log(123456)
+    },
+    methods: {
 
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
+    }
 })

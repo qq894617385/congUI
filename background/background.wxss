@@ -1,8 +1,21 @@
 .bgc-main {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: skyblue;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.bgc-header {
+  width: 100%;
+}
+
+.bgc-middle {
+  flex: 1;
+}
+
+.bgc-footer {
+  width: 100%;
 }

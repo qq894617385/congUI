@@ -1,5 +1,5 @@
-<view class="bgc-main">
-    <view class="bgc-header"></view>
-    <view class="bgc-middle"></view>
-    <view class="bgc-footer"></view>
+<view class="bgc-main" style='background-color:{{backgroundColor}}'>
+    <view class="bgc-header" style='height:{{headerHeight}}'></view>
+    <view class="bgc-middle" style='background-color:{{middleColor}}'></view>
+    <view class="bgc-footer" style='height:{{footerHeight}}'></view>
 </view>
