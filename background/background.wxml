@@ -1,0 +1,5 @@
+<view class="bgc-main">
+    <view class="bgc-header"></view>
+    <view class="bgc-middle"></view>
+    <view class="bgc-footer"></view>
+</view>
