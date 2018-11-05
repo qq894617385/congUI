@@ -19,3 +19,7 @@
 .bgc-footer {
   width: 100%;
 }
+
+view {
+  box-sizing: border-box;
+}

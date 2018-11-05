@@ -2,7 +2,7 @@
     <view class="left-icon">
         <i class="iconfont icon-sousuo" style="font-size:{{fontIcon}}; color:{{blur?color:focusColor}}"></i>
     </view>
-    <input type="text" class="input" bindfocus="focus" bindblur="blur" placeholder="{{pleacehold}}" style="color:{{blur?color:focusColor}}" />
+    <input type="text" class="input" bindinput="bindCode"  bindfocus="focus" bindblur="blur" placeholder="{{pleacehold}}" style="color:{{blur?color:focusColor}}" />
     <view class="right-icon">
         <i class="icon-saoyisao1 iconfont" style="font-size:{{fontIcon}}; color:{{blur?color:focusColor}}"></i>
     </view>

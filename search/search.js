@@ -22,8 +22,8 @@ Component({
     },
     // pleacehold
     pleacehold: {
-      type:String,
-      value:"请输入单号"
+      type: String,
+      value: "请输入单号"
     }
   },
 
@@ -40,6 +40,15 @@ Component({
       this.setData({
         blur: false
       })
+    },
+    //测试
+    bindCode: function (e) {
+      var that = this;
+      var val = e.detail.value; //通过这个传递数据
+      var myEventDetail = {
+        val: val
+      } // detail对象，提供给事件监听函数
+      this.triggerEvent('myevent', myEventDetail) //myevent自定义名称事件，父组件中使用
     }
   }
 })

@@ -16,3 +16,6 @@
     transition: background 0.2s;
 }
 
+view {
+    box-sizing: border-box;
+}
