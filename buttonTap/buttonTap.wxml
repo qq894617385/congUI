@@ -1,0 +1,11 @@
+<!-- pages/test/congUI/buttonTap/buttonTap.wxml -->
+<view>
+    <view class="contant" style="font-size:{{fontSize}}">
+        <view class="tap" bindtap="pick" data-id="{{index}}" wx:for="{{Arr}}" wx:key="item">
+            <view class="tap-contant" style="background: {{id == index? fontColor:background}};color: {{id == index? background:fontColor}}">
+                <span>{{item.name}}</span>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- <test class="contant" bind:index="index" background="#fff" fontColor="#1890ff" Arr="{{Arr}}"></test> -->
