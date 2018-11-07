@@ -28,7 +28,7 @@ Component({
         console.log(this.properties.backgroundColor)
     },
     ready: function () {
-        // console.log(123456)
+        
     },
     methods: {
 

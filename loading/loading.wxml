@@ -1,0 +1,9 @@
+<!-- pages/test/congUI/loading/loading.wxml -->
+<view class="contant" wx:if="{{show}}">
+    <view class="loading-contant">
+        <view class="icon-contant">
+            <i class="iconfont icon-loading icon" style="font-size: 80rpx;"></i>
+        </view>
+        <view class="text-contant">{{text}}</view>
+    </view>
+</view>
