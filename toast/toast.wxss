@@ -1,0 +1,60 @@
+/* pages/test/congUI/toast/toast.wxss */
+@import "../icon/iconfont.wxss";
+
+.contant {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+.text-box {
+    display: flex;
+    justify-content: center;
+    height: 1rpx;
+    margin-top: 40rpx;
+    animation-fill-mode: forwards;
+}
+
+@keyframes top {
+    0% {
+        margin-top: 0rpx;
+        opacity: 0;
+    }
+
+    5% {
+        margin-top: 40rpx;
+        opacity: 1;
+    }
+
+    95% {
+        margin-top: 40rpx;
+        opacity: 1;
+    }
+
+    100% {
+        margin-top: 0rpx;
+        opacity: 0;
+    }
+}
+
+.text-contant {
+    display: flex;
+    align-items: center;
+    padding: 20rpx 30rpx;
+    height: 60rpx;
+    border-radius: 8rpx;
+    box-shadow: 1rpx 1rpx 4rpx 1rpx #bfbfbf;
+    font-size: 28rpx;
+    color: #8c8c8c;
+    background-color: #fafafa;
+}
+
+.text {
+    padding-left: 20rpx;
+}
+
+.success {
+    color: #52c41a;
+}

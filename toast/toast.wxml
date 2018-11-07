@@ -1,0 +1,20 @@
+<!-- pages/test/congUI/toast/toast.wxml -->
+<view class="contant {{display?'display':''}}" wx:if="{{show}}">
+    <view class="text-box" style="animation: top linear 1 {{duration}}ms;">
+        <view class="text-contant" bindtap="display">
+            <i class="iconfont icon-dui success"></i>
+            <view class="text">输入正确</view>
+        </view>
+    </view>
+</view>
+<!-- <test show="{{show}}" bind:event="toast" duration="2000"></test> -->
+<!-- JS添加 -->
+<!-- toast() {
+        this.setData({
+            show: false
+        })
+    }, -->
+
+
+<!-- show默认为false -->
+<!-- 需要手动打开 -->
