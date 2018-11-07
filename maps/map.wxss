@@ -1,0 +1,11 @@
+/* pages/test/congUI/map/map.wxss */
+/* 地图 */
+.maps-contant {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: #fff;
+}
