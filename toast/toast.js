@@ -14,6 +14,14 @@ Component({
     duration: {
       type: Number,
       value: 2000
+    },
+    // 信息框配置
+    text: {
+      type: Object,
+      value: {
+        text: "显示正确",
+        icon: "success"
+      }
     }
   },
   data: {
@@ -25,13 +33,13 @@ Component({
       const that = this;
       clearTimeout(timer)
       timer = setTimeout(() => {
-        that.triggerEvent('myevent', {})
+        that.triggerEvent('event', {})
       }, that.properties.duration)
     },
     // 强制消失
     display() {
       clearTimeout(timer);
-      this.triggerEvent('myevent', {})
+      this.triggerEvent('event', {})
     }
   }
 })

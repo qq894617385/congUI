@@ -58,3 +58,7 @@
 .success {
     color: #52c41a;
 }
+
+.wrong{
+    color: #f5222d;
+}
