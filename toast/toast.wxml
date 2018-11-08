@@ -1,19 +1,10 @@
 <!-- pages/test/congUI/toast/toast.wxml -->
-<view class="contant {{display?'display':''}}" wx:if="{{show}}">
+<view class="contant" wx:if="{{show}}">
     <view class="text-box" style="animation: top linear 1 {{duration}}ms;">
         <view class="text-contant" bindtap="display">
-            <i class="iconfont icon-dui success" wx:if="{{text.icon == 'success'}}"></i>
-            <i class="iconfont icon-cuowuguanbi- wrong" wx:if="{{text.icon == 'wrong'}}"></i>
-            <view class="text">{{text.text}}</view>
+            <i class="iconfont icon-dui success" wx:if="{{icon == 'success'}}"></i>
+            <i class="iconfont icon-cuowuguanbi- wrong" wx:if="{{icon == 'wrong'}}"></i>
+            <view class="text">{{text}}</view>
         </view>
     </view>
 </view>
-<!-- <test show="{{show}}" bind:event="toast" duration="2000"></test> -->
-<!-- JS添加 -->
-<!-- toast() {
-        this.setData({
-            show: false
-        })
-    }, -->
-<!-- show默认为false -->
-<!-- 需要手动打开 -->

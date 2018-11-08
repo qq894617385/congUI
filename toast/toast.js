@@ -1,45 +1,32 @@
 let timer
 
 Component({
-  properties: {
-    // 控制开关
-    show: {
-      type: Boolean,
-      value: false,
-      observer: function (newVal, oldVal, changedPath) {
-        this.time()
-      }
-    },
-    // 延时
-    duration: {
-      type: Number,
-      value: 2000
-    },
-    // 信息框配置
-    text: {
-      type: Object,
-      value: {
-        text: "显示正确",
-        icon: "success"
-      }
-    }
-  },
   data: {
-    display: false
+    show: false,
+    duration: 0,
+    text: "",
+    icon: ""
   },
   methods: {
     // 倒计时
     time() {
       const that = this;
-      clearTimeout(timer)
       timer = setTimeout(() => {
-        that.triggerEvent('event', {})
-      }, that.properties.duration)
+        that.setData({
+          show: false,
+        })
+      }, that.data.duration)
     },
-    // 强制消失
-    display() {
-      clearTimeout(timer);
-      this.triggerEvent('event', {})
+    // 展示挂靠
+    showToast(text, duration, icon) {
+      clearTimeout(timer)
+      this.setData({
+        show: true,
+        duration: duration,
+        text: text,
+        icon: icon
+      });
+      this.time();
     }
   }
 })
