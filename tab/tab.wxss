@@ -1,0 +1,22 @@
+/* pages/test/congUI/tab/tab.wxss */
+.contant {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 120rpx;
+    background-color: skyblue;
+}
+
+.text-contant {
+    display: flex;
+    width: 100%;
+    height: 100rpx;
+    background-color: #fff;
+}
+
+.text-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}

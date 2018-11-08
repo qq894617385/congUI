@@ -1,0 +1,18 @@
+<!-- pages/test/congUI/tab/tab.wxml -->
+<view class="contant">
+    <view class="text-contant">
+        <view class="text-item">
+            <view>1</view>
+        </view>
+        <view class="text-item">
+            <view>2</view>
+        </view>
+        <view class="text-item">
+            <view>3</view>
+        </view>
+    </view>
+    <view class="tab-line">
+        <view class="line-left"></view>
+        <view class=""></view>
+    </view>
+</view>
