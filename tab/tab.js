@@ -23,10 +23,12 @@ Component({
         this.setData({
             total: this.properties.Arr.length
         })
-        let width = parseFloat(100 / this.data.total)
+        // 计算没个单元格宽度
+        let width = parseFloat(100 / this.data.total);
         this.setData({
             width: width
         })
+        // 刷新左右距离
         this.reflash();
     },
     methods: {
@@ -34,10 +36,12 @@ Component({
             this.setData({ in: e.currentTarget.dataset.id
             })
             this.reflash();
+            // 反馈给父级,当前显示的index
             this.triggerEvent("change", {
                 val: e.currentTarget.dataset.id
             })
         },
+        // 计算左右距离函数
         reflash() {
             this.setData({
                 left: this.data.in - 1,

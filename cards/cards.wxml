@@ -1,6 +1,0 @@
-<!--pages/test/congUI/cards/cards.wxml-->
-<view>
-    1231321
-    <slot name="slot1"></slot>
-    <slot name="slot2"></slot>
-</view>

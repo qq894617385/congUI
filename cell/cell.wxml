@@ -1,0 +1,10 @@
+<!-- pages/test/congUI/cards/cards.wxml -->
+<view class="contant">
+    <view class="box">
+        <view class="text">1231</view>
+        <view class="icon-contant">
+            <view class="icon-text">header</view>
+            <i class="iconfont icon-jiantou" style="font-size:34rpx; margin-left:20rpx;"></i>
+        </view>
+    </view>
+</view>
