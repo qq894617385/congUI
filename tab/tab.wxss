@@ -3,14 +3,13 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 120rpx;
-    background-color: skyblue;
+    height: 90rpx;
 }
 
 .text-contant {
     display: flex;
     width: 100%;
-    height: 100rpx;
+    height: 80rpx;
     background-color: #fff;
 }
 
@@ -19,4 +18,25 @@
     justify-content: center;
     align-items: center;
     flex: 1;
+}
+
+.tab-line {
+    display: flex;
+    width: 100%;
+    height: 10rpx;
+    background-color: skyblue;
+}
+
+.line-left {
+    background-color: #fff;
+    transition: width 0.4s ;
+}
+
+.line {
+    height: 100%;
+}
+
+.line-right {
+    background-color: #fff;
+    transition: width 0.4s ease-in-out;
 }
