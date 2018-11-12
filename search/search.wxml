@@ -1,12 +1,13 @@
-<view class="contant" style="box-shadow: 1rpx 1rpx 8rpx 1rpx {{blur?color:focusColor}}">
-    <view class="left-icon">
-        <i class="iconfont icon-sousuo" style="font-size:{{fontIcon}}; color:{{blur?color:focusColor}}"></i>
+<view class="contant">
+    <view class="input-contant" bindtap="click">
+        <i class="iconfont icon-xiazai5" style="font-size:32rpx; margin:0 10rpx;  color: #8c8c8c;"></i>
+        <view class="input" style="{{click?'flex:1':''}}">
+            <view class="text" wx:if="{{!click}}">请输入搜索的内容</view>
+            <input class="text" bindblur="bindblur" bindinput="input" focus="{{focus}}" wx:if="{{click}}" placeholder="请输入搜索的内容" value="{{value}}"></input>
+        </view>
+        <i class="iconfont icon-cuowuguanbi-" style="font-size:32rpx; color:#8c8c8c; margin:0 10rpx" wx:if="{{value.length>0}}" bindtap="clean"></i>
     </view>
-    <input type="text" class="input" bindinput="bindinput" bindfocus="focus" bindblur="blur" placeholder="{{pleacehold}}" style="color:{{blur?color:focusColor}}" />
-    <view class="right-icon">
-        <i class="icon-saoyisao1 iconfont" style="font-size:{{fontIcon}}; color:{{blur?color:focusColor}}"></i>
+    <view class="cancel-contant" bindtap="cancel" style="width:{{click?'60rpx':'0rpx'}};margin-right:{{click?'16rpx':'0rpx'}}">
+        取消
     </view>
 </view>
-<!-- <view class="contant">
-    <search class="button-contant" bind:input="bindinput"></search>
-</view> -->
