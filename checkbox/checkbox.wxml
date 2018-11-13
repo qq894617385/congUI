@@ -1,0 +1,12 @@
+<view class="contant">
+    <view class="item-contant" wx:for="{{Arr}}" wx:key="{{item}}" data-id="{{index}}" bindtap="select">
+        <view class="icon-contant">
+            <view class="icon-radius" style="background:{{item.check?'rgb(16,142,233)':'white'}}">
+                <i wx:if="{{item.check}}" class="iconfont icon-wuquangou_dingzhiyouhoutaibianji" style="font-size:24rpx"></i>
+            </view>
+        </view>
+        <view class="value-contant">
+            <view class="value">{{item.name}}</view>
+        </view>
+    </view>
+</view>
