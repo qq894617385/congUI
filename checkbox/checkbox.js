@@ -4,6 +4,7 @@ Component({
       type: Array,
       value: "",
       observer: function (newVal, oldVal, changedPath) {
+        // 跟新传入数据
         this.importData(newVal);
       }
     }
@@ -14,9 +15,41 @@ Component({
     // 当前选择id
     id: 0,
     // 已选数组
-    selectArr: []
+    selectArr: [],
+    // 父元素高度
+    bigHeight: 0,
+    // 子元素高度
+    smallHeight: 0,
+    // 是否显示滑动标志
+    srcollShow: true
+  },
+  // 加载完成函数
+  ready() {
+    //  获取高度
+    const that = this;
+    const query = wx.createSelectorQuery().in(this)
+    // 获取父元素高度
+    query.select('#big').boundingClientRect(function (res) {
+      that.setData({
+        bigHeight: res.height
+      })
+    }).exec()
+    // 获取子元素高度
+    query.select('#samll').boundingClientRect(function (res) {
+      that.setData({
+        smallHeight: res.height
+      })
+      // 如果子元素的高度比父元素的高度打,应该显示可以滑动的图标
+      if (that.data.bigHeight < res.heigh) {
+        that.setData({
+          srcollShow: true
+        })
+      }
+
+    }).exec()
   },
   methods: {
+    // 选择函数
     select(e) {
       // 获取选择ID
       const id = e.currentTarget.dataset.id;
@@ -63,6 +96,12 @@ Component({
         Arr: data
       })
       console.log(this.data.Arr)
+    },
+    // 滚动中
+    scrolling() {
+      this.setData({
+        srcollShow: false
+      })
     }
   }
 })

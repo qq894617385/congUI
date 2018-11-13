@@ -1,11 +1,14 @@
 @import '../icon/iconfont.wxss';
 
 .contant {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-top: 2rpx solid rgb(217,217,217);
-    border-bottom: 2rpx solid rgb(217,217,217);
+    height: 100%;
+    border-top: 2rpx solid rgb(217, 217, 217);
+    border-bottom: 2rpx solid rgb(217, 217, 217);
+    overflow: hidden;
 }
 
 /* 选择框 */
@@ -19,7 +22,7 @@
 }
 
 .item-contant:nth-of-type(1) .value-contant {
-    border-top: 0rpx solid rgb(217,217,217);
+    border-top: 0rpx solid rgb(217, 217, 217);
 }
 
 .item-contant:active {
@@ -42,7 +45,7 @@
     height: 45rpx;
     border-radius: 50%;
     color: white;
-    border: 2rpx solid rgb(217,217,217);
+    border: 2rpx solid rgb(217, 217, 217);
 }
 
 .value-contant {
@@ -51,7 +54,7 @@
     margin-left: 20rpx;
     flex: 1;
     height: 100%;
-    border-top: 2rpx solid rgb(217,217,217);
+    border-top: 2rpx solid rgb(217, 217, 217);
 }
 
 .value {
