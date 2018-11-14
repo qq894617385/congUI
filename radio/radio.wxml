@@ -1,0 +1,15 @@
+<scroll-view class="contant" id="big" scroll-y="true">
+    <view id="small">
+        <view class="item-contant" wx:for="{{Arr}}" wx:key="item" bindtap="select" data-id="{{index}}">
+            <view class="value-contant">
+                <view class="text">
+                    <view class="text-name">{{item.name}}</view>
+                    <view class="text-detail" wx:if="{{item.detail}}">{{item.detail}}</view>
+                </view>
+                <view class="icon-contant">
+                    <i wx:if="{{item.check}}" class="tick iconfont icon-wuquangou_dingzhiyouhoutaibianji" style="font-size:36rpx;"></i>
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>
