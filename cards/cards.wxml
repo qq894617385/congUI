@@ -1,0 +1,6 @@
+<view class="contant">
+    <view class="title-box">标题1</view>
+    <slot class="contant-box" name="box" >
+        
+    </slot>
+</view>

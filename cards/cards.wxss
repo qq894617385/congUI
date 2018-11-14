@@ -1,0 +1,16 @@
+/* pages/test/congUI/cards/cards.wxss */
+.contant {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300rpx;
+}
+
+.title-box {
+    padding: 10rpx 30rpx;
+    font-size: 30rpx;
+}
+
+.contant-box {
+    flex: 1;
+}
