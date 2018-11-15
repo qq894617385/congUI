@@ -1,13 +1,13 @@
 <view class="contant">
     <view class="icon-contant" wx:for="{{Arr1}}" wx:key="item" style="background-color:{{item.done?'skyblue':'#f5f5f5'}};animation: null;">
-        <i class="icon-wuquangou_dingzhiyouhoutaibianji iconfont" style="font-size:18rpx;"></i>
+        <i class="icon-wuquangou_dingzhiyouhoutaibianji iconfont" style="font-size:18rpx; color: white;"></i>
     </view>
     <view class="step-contant" wx:for="{{Arr2}}" wx:key="item">
         <view class="progress">
             <view class="cover" wx:if="{{item.done}}"></view>
         </view>
         <view class="icon-contant" style="background-color:{{item.done?'skyblue':'#f5f5f5'}}">
-            <i class="icon-wuquangou_dingzhiyouhoutaibianji iconfont" style="font-size:18rpx;"></i>
+            <i class="icon-wuquangou_dingzhiyouhoutaibianji iconfont" style="font-size:18rpx; color: white;"></i>
         </view>
     </view>
 </view>

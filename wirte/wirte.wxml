@@ -1,0 +1,11 @@
+<!-- pages/test/congUI/wirte/wirte.wxml -->
+<view class="contant">
+    <view class="title-contant">{{title}}</view>
+    <view class="input-contant">
+        <input type="text" class="input" maxlength="{{maxlength}}" bindinput="input" value="{{value}}" />
+        <view class="icon-contant" wx:if="{{clean}}" bindtap="clean">
+            <i class="iconfont icon-cuowuguanbi-"></i>
+        </view>
+    </view>
+    <view class="tips-contant" wx:if="{{!check}}">{{tips}}</view>
+</view>

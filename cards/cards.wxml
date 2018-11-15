@@ -1,6 +1,5 @@
 <view class="contant">
     <view class="title-box">标题1</view>
-    <slot class="contant-box" name="box" >
-        
-    </slot>
+    <slot class="contant-box" name="box1"></slot>
+    <slot class="contant-box" name="box2"></slot>
 </view>

@@ -1,0 +1,59 @@
+/* pages/test/congUI/wirte/wirte.wxss */
+@import "../icon/iconfont.wxss";
+
+.contant {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-contant {
+    width: 100%;
+    font-size: 28rpx;
+}
+
+.input-contant {
+    display: flex;
+    width: 100%;
+    height: 56rpx;
+}
+
+.icon-contant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40rpx;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: inputIcon 0.4s;
+}
+
+@keyframes inputIcon {
+    from {
+        width: 0rpx;
+        opacity: 0;
+    }
+
+    to {
+        width: 40rpx;
+        opacity: 1;
+    }
+}
+
+.input {
+    margin-right: 10rpx;
+    padding-left: 16rpx;
+    flex: 1;
+    height: 100%;
+    border: 1rpx solid skyblue;
+    border-radius: 8rpx;
+    font-size: 28rpx;
+    transition: width 0.4s;
+}
+
+.tips-contant {
+    margin-top: 10rpx;
+    font-size: 20rpx;
+    font-family: microsoft yahei;
+    color: #8c8c8c;
+}
