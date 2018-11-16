@@ -1,0 +1,25 @@
+<view class="contant">
+    <view class="add">
+        <i class="iconfont icon-jia"></i>
+    </view>
+    <view class="input-contant">
+        <input type="text" />
+    </view>
+    <view class="sub">
+        <i class="iconfont icon-jian"></i>
+    </view>
+</view>
+<view class="cal-contant">
+    <view class="cal-show">1</view>
+    <view class="cal-key">
+        <view class="cal-left">
+            <!-- 数字键盘 -->
+            <view class="key" wx:for="{{key}}">{{item}}</view>
+        </view>
+        <view class="cal-right">
+            <view>2</view>
+            <view>3</view>
+            <view>4</view>
+        </view>
+    </view>
+</view>

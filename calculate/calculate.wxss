@@ -1,0 +1,50 @@
+/* pages/test/congUI/calculate/calculate.wxss */
+@import "../icon/iconfont.wxss";
+
+.contant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-contant {
+    width: 200rpx;
+}
+
+.sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cal-contant {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500rpx;
+    background-color: skyblue;
+}
+
+/* 下面是数字键盘 */
+.cal-key {
+    display: flex;
+}
+
+.cal-left {
+    display: flex;
+    width: 75%;
+}
+
+.key{
+    
+}
+
+.cal-right {
+    width: 25%;
+}
