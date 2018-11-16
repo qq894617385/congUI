@@ -45,6 +45,10 @@ Component({
           clean: false
         })
       }
+      // 存储输入的值
+      this.setData({
+        value: value
+      })
       // 检测函数
       this.check()
       // 弹出函数
@@ -77,6 +81,10 @@ Component({
           check: false
         })
         return;
+      } else {
+        that.setData({
+          check: true
+        })
       }
     }
   }
