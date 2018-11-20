@@ -80,7 +80,6 @@ Component({
             // 之前就没有输入,所以说就不能以"运算符号开头"
             break;
           }
-
           if (last == '+' || last == '-' || last == '×' || last == '÷') {
             // 退一格
             showStr = showStr.slice(0, showStr.length - 1);
@@ -101,7 +100,6 @@ Component({
     // 计算函数
     cal() {
       const that = this;
-
       console.log("开始结算");
       // 显示板
       const showStr = this.data.showStr;
@@ -187,6 +185,9 @@ Component({
         }
       }
       console.log(res, '得数')
+      this.setData({
+        res: res
+      })
     },
     clear() {
       console.log("清空函数")

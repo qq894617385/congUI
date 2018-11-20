@@ -10,9 +10,8 @@
     </view>
 </view>
 <view class="cal-contant">
-    <view>{{res}}</view>
+    <view class="res">{{res}}</view>
     <view class="cal-show">{{showStr}}
-
     </view>
     <view class="cal-key">
         <view class="cal-left">
@@ -22,7 +21,9 @@
             </view>
         </view>
         <view class="cal-right">
-            <view class="cancel-key" data-key="del" bindtap="key">删除</view>
+            <view class="cancel-key" data-key="del" bindtap="key">
+                <i class="iconfont icon-backspace" style="font-size:40rpx;"></i>
+            </view>
             <view class="operating-key">
                 <view bindtap="key" data-key="+">+</view>
                 <view bindtap="key" data-key="-">-</view>
