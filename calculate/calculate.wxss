@@ -7,22 +7,32 @@
     align-items: center;
 }
 
+/* 增加按钮 */
 .add {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* 输入框 */
 .input-contant {
     width: 200rpx;
 }
 
+/* 减少按钮 */
 .sub {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* 计算机显示屏 */
+.cal-show {
+    flex: 1;
+    background-color: #fff;
+}
+
+/* 计算器按钮 */
 .cal-contant {
     display: flex;
     flex-direction: column;
@@ -34,17 +44,77 @@
 /* 下面是数字键盘 */
 .cal-key {
     display: flex;
+    width: 100%;
+    height: 300rpx;
+    border-top: 1rpx solid black;
+    border-left: 1rpx solid black;
 }
 
+
+/* 键盘左边 */
 .cal-left {
     display: flex;
+    flex-wrap: wrap;
     width: 75%;
 }
 
-.key{
-    
+/* 键盘数字 */
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.333333%;
+    height: 25%;
+    border-bottom: 1rpx solid black;
+    border-right: 1rpx solid black;
 }
 
+/* 键盘右边 */
 .cal-right {
     width: 25%;
+    height: 100%;
+}
+
+
+/* 取消键 */
+.cancel-key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    width: 100%;
+    height: 25%;
+    border-bottom: 1rpx solid black;
+    border-right: 1rpx solid black;
+}
+
+/* 计算功能键 */
+.operating-key {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50%;
+}
+
+/* 加减乘除 */
+.operating-key view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    border-bottom: 1rpx solid black;
+    border-right: 1rpx solid black;
+}
+
+/* 等于号 */
+.blance-key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    border-bottom: 1rpx solid black;
+    border-right: 1rpx solid black;
 }
