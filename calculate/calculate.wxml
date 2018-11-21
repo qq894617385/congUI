@@ -1,18 +1,20 @@
 <view class="contant">
     <view class="add">
-        <i class="iconfont icon-jia"></i>
+        <i class="iconfont icon-jia" bindtap="add"></i>
     </view>
     <view class="input-contant">
-        <input type="text" />
+        <input type="text" bindinput="input" value="{{inputValue}}" />
     </view>
     <view class="sub">
-        <i class="iconfont icon-jian"></i>
+        <i class="iconfont icon-jian" bindtap="dec"></i>
+    </view>
+    <view class="cal-icon">
+        <i class="icon-jisuanqi iconfont" bindtap="calShow"></i>
     </view>
 </view>
-<view class="cal-contant">
+<view class="cal-contant" wx:if="{{show}}">
     <view class="res">{{res}}</view>
-    <view class="cal-show">{{showStr}}
-    </view>
+    <view class="cal-show">{{showStr}}</view>
     <view class="cal-key">
         <view class="cal-left">
             <!-- 数字键盘 -->
@@ -30,7 +32,8 @@
                 <view bindtap="key" data-key="×">×</view>
                 <view bindtap="key" data-key="÷">÷</view>
             </view>
-            <view class="blance-key" bindtap="key" data-key="=">=</view>
+            <view class="blance-key" bindtap="key" data-key="=" wx:if="{{!complete}}">=</view>
+            <view class="blance-key" bindtap="key" data-key="完成" wx:if="{{complete}}">完成</view>
         </view>
     </view>
 </view>

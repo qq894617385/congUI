@@ -19,7 +19,14 @@ Component({
     ],
     // 屏幕上显示的字符
     showStr: "",
-    res: ""
+    // 展示的结果
+    res: "",
+    // 是否展示计算
+    show: false,
+    // 输入框的数值
+    inputValue: "0",
+    // 是否完成输入
+    complete: false
   },
   methods: {
     key(e) {
@@ -34,7 +41,14 @@ Component({
       const last = showStr.slice(showStr.length - 1);
       // 监听输入
       switch (key) {
-        // 清空
+        // 完成
+        case '完成':
+          that.setData({
+            complete: true,
+            show: false,
+            inputValue: that.data.res
+          })
+          // 清空
         case 'C':
           that.clear();
           update = false;
@@ -113,7 +127,8 @@ Component({
       // 如果输入的数据只是数字
       if (numArr.length <= 1) {
         that.setData({
-          res: numArr[0]
+          res: numArr[0],
+          complete: true
         })
         return;
       }
@@ -186,18 +201,64 @@ Component({
       }
       console.log(res, '得数')
       this.setData({
-        res: res
+        // 显示得数
+        res: res,
+        // 显示完成
+        complete: true
       })
     },
     clear() {
       console.log("清空函数")
       // 清空数据
       this.setData({
-        showStr: ""
+        showStr: "",
+        complete: false,
+        res: ""
       })
       console.log(this.data.showStr)
       // 还原小数输入
       ponit = false;
+    },
+    // 输入绑定监听
+    input(e) {
+      const val = e.detail.value;
+      this.setData({
+        inputValue: val
+      })
+    },
+    // 点击单个添加
+    add() {
+      let val = this.data.inputValue;
+      // 把字符串转化为小数
+      val = parseFloat(val);
+      // 自动加一
+      val = val + 1;
+      // 更新data的数值
+      this.setData({
+        inputValue: val
+      })
+    },
+    // 点击单个减少
+    dec() {
+      let val = this.data.inputValue;
+      // 把字符串转化为小数
+      val = parseFloat(val);
+      // 自动加一
+      val = val - 1;
+      // 非负数兼容处理
+      if (val <= 0) {
+        val = 0
+      }
+      // 更新data的数值
+      this.setData({
+        inputValue: val
+      })
+    },
+    // 展示计算器
+    calShow() {
+      this.setData({
+        show: true
+      })
     }
   }
 })
