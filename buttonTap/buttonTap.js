@@ -23,10 +23,6 @@ Component({
   },
   // 静态数据
   data: {
-    // 控制数组
-    Arr: [
-
-    ],
     //当前选择的index  -1时为全部
     id: -1
   },
@@ -44,7 +40,7 @@ Component({
       const output = {
         val: index
       }
-      
+
       // 输出index
       this.triggerEvent('index', output)
     }

@@ -22,18 +22,18 @@
 }
 
 .text {
+    padding-left: 10rpx; 
     flex: 1;
 }
 
 .icon-contant {
     display: flex;
     align-items: center;
-    width: 100px;
     height: 100%;
     color: #8c8c8c;
 }
 
 .icon-text {
-    text-align: end;
-    flex: 1;
+    padding: 0 16rpx;
+    box-sizing: content-box;
 }
