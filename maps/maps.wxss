@@ -1,1 +1,34 @@
 /* pages/test/congUI/maps/maps.wxss */
+@import '../icon/iconfont.wxss';
+
+.contant {
+    display: flex;
+    width: 100%;
+    padding: 0 10rpx;
+    box-sizing: border-box;
+}
+
+.icon-contant {
+    display: flex;
+    align-items: center;
+    padding: 0 10rpx;
+}
+
+.detail-contant {
+    display: flex;
+    padding: 10rpx 0;
+    align-items: center;
+    flex: 1;
+    font-size: 28rpx;
+}
+
+.des-contant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10rpx;
+    font-size: 28rpx;
+    color: skyblue;
+}
+
+

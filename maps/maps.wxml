@@ -1,5 +1,13 @@
 <view class="maps-contant" wx:if="{{show}}">
-    <view class="page-section page-section-gap">
-        <map id="qqMap" style="width: 100%; height: 300px;" latitude="{{latitude}}" longitude="{{longitude}}" show-location></map>
+    <view class="page-section page-section-gap" >
+        <map id="qqMap" style="width: 100%; height: 300px;" latitude="{{latitude}}" longitude="{{longitude}}"
+            show-location></map>
     </view>
+</view>
+<view class="contant" bindtap="mapOpen">
+    <view class="icon-contant">
+        <i class="iconfont icon-dingwei" style="font-size: 40rpx;"></i>
+    </view>
+    <view class="detail-contant">{{name}}</view>
+    <view class="des-contant">选择</view>
 </view>

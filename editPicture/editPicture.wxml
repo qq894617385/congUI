@@ -1,0 +1,16 @@
+<view class="contant">
+    <view class="img-box">
+        <image class="image" mode="aspectFit" src="https://static.smartisanos.cn/os/assets/images/onestep-logo@2x.e035bc6a7fbf6f6a5986c4349a6c9a7e.png">
+            <movable-area  class="area" scale-area>
+                <movable-view class="select" direction="all" bindchange="onChange" bindscale="onScale"
+                    scale scale-min="0.5" scale-max="4" scale-value="2">
+
+                </movable-view>
+            </movable-area>
+        </image>
+    </view>
+    <view class="control-box">
+        <view class="img-button"> 上传照片</view>
+        <view class="img-button"> 本地读取</view>
+    </view>
+</view>
