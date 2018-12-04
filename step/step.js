@@ -1,6 +1,8 @@
 Component({
-  data: {
-    Arr: [{
+  properties: {
+    step: {
+      type: Array,
+      value: [{
         name: "步骤一",
         done: true
       },
@@ -15,12 +17,35 @@ Component({
       {
         name: "步骤四",
         done: false
-      }
+      }]
+    }
+  },
+  data: {
+    Arr: [{
+      name: "步骤一",
+      done: true
+    },
+    {
+      name: "步骤二",
+      done: true
+    },
+    {
+      name: "步骤三",
+      done: true
+    },
+    {
+      name: "步骤四",
+      done: false
+    }
     ],
     Arr1: [],
     Arr2: []
   },
   ready() {
+    // 输入覆盖数组
+    this.setData({
+      step:this.properties.step
+    })
     // 取出数组
     let Arr = this.data.Arr;
     // 分割数组

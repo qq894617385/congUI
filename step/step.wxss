@@ -3,7 +3,14 @@
 .contant {
     margin-top: 20rpx;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 100%;
+    
+}
+
+.box{
+    display: flex;
     width: 100%;
     height: 35rpx;
 }
@@ -25,6 +32,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
     margin: 0 10rpx;
     width: 35rpx;
     height: 100%;
@@ -40,10 +48,6 @@
     to {
         opacity: 1;
     }
-}
-
-i {
-    
 }
 
 .cover {
@@ -62,4 +66,14 @@ i {
     to {
         width: 100%;
     }
+}
+
+.step-text{
+    display: flex;
+    width: 100%;
+}
+
+.text-contant{
+    flex: 1;
+    text-align: center;
 }
