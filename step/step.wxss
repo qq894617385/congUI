@@ -22,23 +22,37 @@
     height: 100%;
 }
 
+.step-contant:last-child{
+    text-align: end;
+}
+
 .progress {
     flex: 1;
     height: 4rpx;
     background-color: #f5f5f5;
 }
 
+.space{
+    flex: 1;
+}
+
 .icon-contant {
     display: flex;
     justify-content: center;
     align-items: center;
-    
     margin: 0 10rpx;
     width: 35rpx;
     height: 100%;
     border-radius: 50%;
     animation: icon 1s;
 }
+
+.first-contant{
+    margin: 0 10rpx;
+    width: 35rpx;
+    height: 100%;
+}
+
 
 @keyframes icon {
     from {
@@ -70,10 +84,24 @@
 
 .step-text{
     display: flex;
+    margin-top: 10rpx;
     width: 100%;
+    font-size: 28rpx;
+    color: #d9d9d9;
 }
 
 .text-contant{
-    flex: 1;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10rpx;
+    width: 35rpx;
+    height: 100%;
+    animation: icon 1s;
+}
+
+.step-contant:last-child .text-contant{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }

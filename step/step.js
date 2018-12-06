@@ -18,6 +18,10 @@ Component({
         name: "步骤四",
         done: false
       }]
+    },
+    color: {
+      type: String,
+      value: "skyblue"
     }
   },
   data: {
@@ -44,7 +48,7 @@ Component({
   ready() {
     // 输入覆盖数组
     this.setData({
-      step:this.properties.step
+      step: this.properties.step
     })
     // 取出数组
     let Arr = this.data.Arr;

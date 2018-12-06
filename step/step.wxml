@@ -12,7 +12,13 @@
             </view>
         </view>
     </view>
-    <view class="step-text" >
-        <view class="text-contant" wx:for="{{step}}" wx:key="item">12</view>
+    <view class="step-text">
+        <view class="first-contant" style="color:{{color}}" wx:for="{{Arr1}}" wx:key="item">
+            11231
+        </view>
+        <view class="step-contant" wx:for="{{Arr2}}" wx:key="item">
+            <view class="space"></view>
+            <view class="text-contant" style="color:{{item.done?color:''}};">{{index+2}}11111</view>
+        </view>
     </view>
 </view>
