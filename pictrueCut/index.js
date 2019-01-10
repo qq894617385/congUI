@@ -6,7 +6,7 @@ const W = device.windowWidth
 const H = device.windowHeight - 50
 
 let cropper = require('./init.js');
-let cropperUtil = require('./Util.js')
+let cropperUtil = require('./util.js')
 
 Component({
     properties: {

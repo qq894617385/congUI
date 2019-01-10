@@ -1,4 +1,4 @@
-let cropperUtil = require('./Util.js')
+let cropperUtil = require('./util.js')
 
 var init = function (W, H) {
     let that = this
@@ -598,7 +598,7 @@ var init = function (W, H) {
             let path = imageInfo.path
             let compressedScale = z.data.cropperData.original ? 1.0 : 0.4
             let rotateDegree = z.data.cropperChangableData.rotateDegree
-            
+
             let canvasCtx = wx.createCanvasContext('canvas', z)
             let originalCanvasCtx = wx.createCanvasContext('originalCanvas', z)
             //绘制原图
